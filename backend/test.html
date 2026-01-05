@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Habit Suggestion</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Get Your AI Habit Suggestion</h1>
+  <button onclick="getAISuggestion()">Get AI Suggestion</button>
+
+  <script>
+    async function getAISuggestion() {
+      try {
+        const res = await fetch("http://localhost:4000/api/ai/suggest", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ prompt: "Give me a habit suggestion" })
+        });
+
+        if (!res.ok) {
+          throw new Error("Failed to fetch suggestion");
+        }
+
+        const data = await res.json();
+        alert(data.suggestion || "No suggestion received.");
+      } catch (error) {
+        console.error("Error fetching suggestion:", error);
+        alert("Error: " + error.message);
+      }
+    }
+  </script>
+</body>
+</html>

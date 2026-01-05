@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font + base */
+:root {
+  --font-primary: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+body {
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Small UI tweaks */
+.header-small {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* animations we added earlier */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+.animate-fadeIn { animation: fadeIn 0.25s ease-in-out; }
+.typing-dots::after { content: "..."; animation: dots 1.5s steps(3, end) infinite; }
+@keyframes dots { 0%, 20% { content: ""; } 40% { content: "."; } 60% { content: ".."; } 80% { content: "..."; } 100% { content: ""; } }
+
+/* Make editor area look native with rounded corners */
+.quill-editor {
+  min-height: 160px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 8px;
+  background: white;
+}
+.dark .quill-editor {
+  background: #111827;
+  border-color: rgba(255,255,255,0.06);
+}
