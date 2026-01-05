@@ -73,20 +73,19 @@ SmartTaskAI/
 - AI model weights are intentionally excluded from the repository
 
 
-````
+
 ## ⚙️ Environment Variables
 
 ### Backend (`backend/.env`)
-```env
+
 PORT=5000
 JWT_SECRET=your_jwt_secret
 OPENAI_API_KEY=your_api_key
 DATABASE_URL=your_database_url
-````
+
 
 ### Frontend (`frontend/.env`)
 
-```
 VITE_API_URL=http://localhost:5000
 
 ## ▶️ Running the Project Locally
@@ -128,4 +127,5 @@ AI & Full-Stack Developer
 ## 📄 License
 
 This project is licensed under the **MIT License**.
+
 
