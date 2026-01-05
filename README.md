@@ -65,30 +65,31 @@ SmartTaskAI/
 └── README.md
 ```
 ## 🔐 Security Practices
-All sensitive data is stored using environment variables
 
-.env files are excluded from version control
+- All sensitive data is stored using **environment variables**
+- `.env` files are excluded from version control
+- JWT-based authentication
+- No secrets or API keys committed to GitHub
+- AI model weights are intentionally excluded from the repository
 
-JWT-based authentication
 
-No secrets or API keys committed to GitHub
+````
+## ⚙️ Environment Variables
 
-AI model weights are intentionally excluded from the repository
-
-###⚙️ Environment Variables
-Backend (backend/.env)
-env
-Copy code
+### Backend (`backend/.env`)
+```env
 PORT=5000
 JWT_SECRET=your_jwt_secret
 OPENAI_API_KEY=your_api_key
 DATABASE_URL=your_database_url
-Frontend (frontend/.env)
-env
----
+````
 
-### VITE_API_URL=http://localhost:5000
-▶️ Running the Project Locally
+### Frontend (`frontend/.env`)
+
+```
+VITE_API_URL=http://localhost:5000
+
+## ▶️ Running the Project Locally
 
 ### Backend
 
@@ -97,42 +98,34 @@ npm install
 npm start
 
 ### Frontend
-
 cd frontend
 npm install
 npm run dev
----
 
 ## 🚀 Deployment
+
 SmartTaskAI is deployment-ready and can be hosted on:
 
-AWS (EC2, Amplify, Elastic Beanstalk)
-
-Render
-
-Vercel or Netlify (Frontend)
-
-Docker-based environments
+- AWS (EC2, Amplify, Elastic Beanstalk)
+- Render
+- Vercel or Netlify (Frontend)
+- Docker-based environments
 
 AI models should be loaded dynamically or from cloud storage in production.
----
 
 ## 📈 Use Cases
-Personal productivity management
 
-AI-assisted task planning
-
-Habit tracking applications
-
-Full-stack & AI portfolio project
----
+- Personal productivity management
+- AI-assisted task planning
+- Habit tracking applications
+- Full-stack & AI portfolio project
 
 ## 👤 Author
-Zalak
-Full-Stack & AI Developer
----
-## 📄 License
-This project is licensed under the MIT License.
-```
 
+**Zalak**  
+AI & Full-Stack Developer
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
 
