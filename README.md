@@ -63,7 +63,7 @@ SmartTaskAI/
 │   └── public/
 │
 └── README.md
-
+```
 🔐 Security Practices
 All sensitive data is stored using environment variables
 
@@ -130,3 +130,4 @@ Full-Stack & AI Developer
 📄 License
 This project is licensed under the MIT License.
 ```
+
