@@ -88,6 +88,7 @@ DATABASE_URL=your_database_url
 
 VITE_API_URL=http://localhost:5000
 
+
 ## ▶️ Running the Project Locally
 
 ### Backend
@@ -101,6 +102,7 @@ cd frontend
 npm install
 npm run dev
 
+
 ## 🚀 Deployment
 
 SmartTaskAI is deployment-ready and can be hosted on:
@@ -112,6 +114,7 @@ SmartTaskAI is deployment-ready and can be hosted on:
 
 AI models should be loaded dynamically or from cloud storage in production.
 
+
 ## 📈 Use Cases
 
 - Personal productivity management
@@ -119,13 +122,16 @@ AI models should be loaded dynamically or from cloud storage in production.
 - Habit tracking applications
 - Full-stack & AI portfolio project
 
+
 ## 👤 Author
 
-**Zalak**  
+**Zalak Rajvanshi **  
 AI & Full-Stack Developer
+
 
 ## 📄 License
 
 This project is licensed under the **MIT License**.
+
 
 
